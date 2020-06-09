@@ -2,8 +2,8 @@ import  Foundation
 
 public struct UserDetails:Codable
 {
-    var name:String?
-    var email:String?
+    public var name:String?
+    public var email:String?
 }
 
 public class DataModelMapper
