@@ -2,8 +2,16 @@ import  Foundation
 
 public struct UserDetails:Codable
 {
+    public struct Address:Codable
+    {
+        public var street:String?
+        public var city:String?
+    }
     public var name:String?
     public var email:String?
+    public var address:Address?
+
+    
 }
 
 public class DataModelMapper
