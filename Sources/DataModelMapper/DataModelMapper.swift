@@ -1,4 +1,26 @@
 import  Foundation
+public struct EmployeeDetails:Codable
+{
+    var name:String?
+    var email:String?
+}
+public class UserDetails:Codable
+{
+   
+    var name:String?
+    var email:String?
+}
+public struct EmployeeDetails:Codable
+{
+    public struct DataObj:Codable{
+        var id:String?
+        var employee_name:String?
+        var employee_salary:String?
+        var employee_age:String?
+    }
+    var status:String?
+    var data:DataObj?
+}
 public class DataModelMapper
 {
     public static let shared = DataModelMapper.init()
@@ -40,14 +62,4 @@ extension Bundle
     }
 }
 
-public struct EmployeeDetails:Codable
-{
-    public struct DataObj:Codable{
-        var id:String?
-        var employee_name:String?
-        var employee_salary:String?
-        var employee_age:String?
-    }
-    var status:String?
-    var data:DataObj?
-}
+
