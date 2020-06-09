@@ -1,5 +1,5 @@
 import  Foundation
-public struct EmployeeDetails:Codable
+public struct EmployeeDetails1:Codable
 {
     var name:String?
     var email:String?
